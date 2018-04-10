@@ -14,7 +14,7 @@
     <artifactId>resetpassword</artifactId>
     <version>2.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <url>https://github.com/onehippo-forge/reset-password</url>
+    <url>http://gitlab.dev.politie.nl/nmdd/reset-password</url>
     <inceptionYear>2016</inceptionYear>
     <organization>
       <name>Hippo</name>
@@ -42,30 +42,26 @@
     </properties>
 
   <scm>
-    <connection>scm:git:git@github.com:onehippo-forge/reset-password.git</connection>
-    <developerConnection>scm:git:git@github.com:onehippo-forge/reset-password.git</developerConnection>
-    <url>https://github.com/onehippo-forge/reset-password.git</url>
+    <connection>scm:git:git@gitlab.dev.politie.nl:nmdd/reset-password.git</connection>
+    <developerConnection>scm:git:git@gitlab.dev.politie.nl:nmdd/reset-password.git</developerConnection>
+    <url>http://gitlab.dev.politie.nl/nmdd/reset-password</url>
     <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
     <repository>
-      <name>Hippo Maven 2 Forge Repository</name>
-      <id>hippo-maven2-forge</id>
-      <url>https://maven.onehippo.com/content/repositories/forge-releases/</url>
-      <uniqueVersion>false</uniqueVersion>
+      <name>libs-release-local</name>
+      <id>libs-release-local</id>
+      <url>http://maven.dev.politie.nl/artifactory/libs-release-local/</url>
+      <uniqueVersion>true</uniqueVersion>
     </repository>
+    <snapshotRepository>
+      <name>libs-snapshot-local</name>
+      <id>libs-snapshot-local</id>
+      <url>http://maven.dev.politie.nl/artifactory/libs-snapshot-local/</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
   </distributionManagement>
-
-  <issueManagement>
-    <system>Jira</system>
-    <url>https://issues.onehippo.com/browse/HIPFORGE</url>
-  </issueManagement>
-
-  <ciManagement>
-    <system>Travis CI</system>
-    <url>https://travis-ci.org/onehippo-forge/reset-password</url>
-  </ciManagement>
 
   <licenses>
     <license>
