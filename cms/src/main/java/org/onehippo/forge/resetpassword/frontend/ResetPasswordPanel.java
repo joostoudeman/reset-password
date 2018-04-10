@@ -260,7 +260,7 @@ public class ResetPasswordPanel extends Panel {
 
         private String getUrl(final Session session, final String code) throws RepositoryException {
             // generate reset url
-            Url url = getRequest().getUrl();
+            Url url = getRequest().getClientUrl();
             String protocol = url.getProtocol();
             int port = url.getPort();
             String frontendHostName = protocol + "://" + url.getHost();
