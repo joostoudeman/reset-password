@@ -187,7 +187,7 @@
         <version>${plugin.source.version}</version>
         <executions>
           <execution>
-            <id>attach-sources</id>
+            <id>attach-sources-no-fork</id>
             <phase>verify</phase>
             <goals>
               <goal>jar-no-fork</goal>
