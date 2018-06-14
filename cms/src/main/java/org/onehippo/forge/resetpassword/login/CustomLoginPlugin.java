@@ -42,7 +42,6 @@ public class CustomLoginPlugin extends DefaultLoginPlugin {
 
         public CustomLoginForm(final String id, final boolean autoComplete, final List<String> locales, final LoginHandler handler) {
             super(id, autoComplete, locales, handler);
-            form.addLabelledComponent(new Label("forgot-password-label", new ResourceModel("forgot.password.label")));
 
             setCookieValue(CustomPluginUserSession.LOCALE_COOKIE, selectedLocale, CustomPluginUserSession.LOCALE_COOKIE_MAXAGE);
         }
